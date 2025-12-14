@@ -31,8 +31,34 @@ const associationData = {
 };
 
 const jobPostings = [
+    {
+    department: "Departamento Académico",
+    departmentDescription: "O Departamento Académico e de Debates é uma das áreas essenciais da associação,"+
+      "responsável por promover o desenvolvimento académico, intelectual e crítico dos " +
+      "estudantes. O seu papel é criar iniciativas que apoiem a aprendizagem, incentivem a " +
+      "troca de conhecimentos e ofereçam espaços seguros para a expressão de ideias, o " +
+      "debate construtivo e o crescimento académico coletivo.",
+    positions: [
+      {
+        title: "Coordenador(a)",
+        description:
+          "Procuramos um(a) líder académico(a) visionário(a) para coordenar o Departamento Académico e de Debates. Nesta posição estratégica, terás a responsabilidade de definir e implementar o rumo das atividades académicas da associação, promovendo o desenvolvimento intelectual da comunidade estudantil.\n\n" +
+          "Como Coordenador(a), serás responsável por elaborar os planos trimestrais e anuais do departamento, alinhando-os com os objetivos gerais da AEMOPOL. Representarás o departamento em reuniões oficiais e terás a importante função de supervisionar a equipa de responsáveis e assistentes, garantindo qualidade e coerência nas iniciativas.\n\n" +
+          "O teu papel incluirá validar temas para debates, cursos e grupos de estudo, assegurando relevância e impacto. Através de avaliações mensais de desempenho, liderarás a melhoria contínua das atividades, criando um ambiente académico estimulante e enriquecedor para todos os estudantes.",
+        applyLink: "https://forms.gle/your-google-form-link",
+      },
+      {
+        title: "Vice-Coordenador(a)",
+        description:
+          "És organizado(a), tens capacidade de coordenação e gostas de trabalho colaborativo? Como Vice-Coordenador(a) do Departamento Académico, serás o braço direito do Coordenador, garantindo que todas as atividades académicas decorram com eficiência e profissionalismo.\n\n" +
+          "Nesta função, serás responsável pela gestão logística das atividades — desde a reserva de salas e definição de horários até à preparação de materiais necessários. Atuarás como elo de ligação entre o Departamento Académico e outros departamentos da associação, facilitando colaborações e garantindo comunicação fluida.\n\n" +
+          "Terás também a responsabilidade de substituir o Coordenador quando necessário, o que te dará uma visão completa da liderança do departamento e a oportunidade de desenvolver competências de gestão numa função de grande impacto.",
+        applyLink: "https://forms.gle/your-google-form-link",
+      },
+    ],
+  },
   {
-    department: "Cultura e Eventos",
+    department: "Departamento de Cultura e Eventos",
     departmentDescription:
       "O Departamento de Cultura e Eventos é responsável por promover a identidade cultural moçambicana na Polónia, " +
       "criar momentos de convívio, integração e celebração entre os estudantes, e organizar iniciativas que fortaleçam o sentido de comunidade. " +
@@ -69,18 +95,10 @@ const jobPostings = [
           "Durante os eventos, terás a responsabilidade de supervisionar as operações no terreno, resolver imprevistos e coordenar as equipas de apoio, garantindo que cada atividade decorra com sucesso e profissionalismo.",
         applyLink: "https://forms.gle/your-google-form-link",
       },
-      {
-        title: "Produção de Conteúdo",
-        description:
-          "Tens talento criativo e gosto pela comunicação visual? Junta-te a nós como Responsável de Produção de Conteúdo e ajuda a dar vida aos eventos da AEMOPOL através de design impactante e estratégias de engagement digital.\n\n" +
-          "Serás responsável por criar materiais visuais atrativos para promover os eventos, desde cartazes e flyers digitais até conteúdos para redes sociais. Em colaboração com o Conselho Geral, gerirás a comunicação online da associação em períodos pré e pós-evento, desenvolvendo estratégias para maximizar o alcance e participação.\n\n" +
-          "Esta função requer trabalho próximo com o Departamento de Marketing, garantindo coerência visual e alinhamento com a identidade da associação, enquanto impulsionas o engagement da comunidade estudantil através de conteúdos criativos e relevantes.",
-        applyLink: "https://forms.gle/your-google-form-link",
-      },
     ],
   },
   {
-    department: "Marketing",
+    department: " Departamento de Marketing",
     departmentDescription:
       "O Departamento de Marketing tem como propósito principal garantir a comunicação estratégica e eficaz da Associação de Estudantes Moçambicanos na Polónia." +
       " O seu papel é assegurar que todas as iniciativas, eventos, valores e projetos da associação sejam comunicados de forma clara, atrativa e consistente, promovendo a unidade, " +
@@ -106,7 +124,7 @@ const jobPostings = [
     ],
   },
   {
-    department: "Tecnologia e Informação",
+    department: " Departamento de Tecnologia e Informação",
     departmentDescription: "",
     positions: [
       {
