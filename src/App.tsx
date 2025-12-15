@@ -255,22 +255,27 @@ const jobPostings = [
 // --- Components ---
 
 const HomePage = ({ onViewJobs }: { onViewJobs: () => void }) => (
-  <Card className="w-full max-w-2xl mx-auto">
-    <CardHeader className="text-center px-4 sm:px-6">
-      <CardTitle className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
+  <Card className="w-full max-w-2xl mx-auto border-0 overflow-hidden shadow-xl">
+    <CardHeader className="text-center px-4 sm:px-6 py-8 pb-6 bg-gradient-to-b from-primary via-primary/90 to-primary/70 text-white relative">
+      <div className="absolute top-0 right-0 w-32 h-32 bg-accent/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/30 rounded-full blur-2xl"></div>
+      <CardTitle className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight relative z-10">
         {associationData.name}
       </CardTitle>
-      <CardDescription className="text-base sm:text-lg pt-2">
+      <CardDescription className="text-base sm:text-lg pt-2 text-white/90 relative z-10">
         Juntos para um futuro melhor.
       </CardDescription>
     </CardHeader>
-    <CardContent className="px-4 sm:px-6">
+    <CardContent className="px-4 sm:px-6 py-10 -mt-6 bg-gradient-to-b from-primary/10 via-primary/3 to-white">
       <p className="text-sm sm:text-base text-center whitespace-pre-line leading-relaxed">
         {associationData.introduction}
       </p>
     </CardContent>
-    <CardFooter className="flex justify-center px-4 sm:px-6">
-      <Button onClick={onViewJobs} className="w-full sm:w-auto">
+    <CardFooter className="flex justify-center px-4 sm:px-6 pb-8 pt-4 bg-gradient-to-b from-white via-muted/5 to-muted/10">
+      <Button
+        onClick={onViewJobs}
+        className="w-full sm:w-auto bg-gradient-to-r from-secondary via-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+      >
         Veja as Vagas Disponíveis
       </Button>
     </CardFooter>
@@ -279,20 +284,27 @@ const HomePage = ({ onViewJobs }: { onViewJobs: () => void }) => (
 
 const JobsPage = ({ onBack }: { onBack: () => void }) => (
   <div className="w-full max-w-3xl mx-auto">
-    <Button variant="outline" size="sm" onClick={onBack} className="mb-4">
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={onBack}
+      className="mb-4 border-2 border-primary text-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary/80 hover:text-white transition-all duration-300"
+    >
       <ArrowLeft className="mr-2 h-4 w-4" />
       Voltar
     </Button>
-    <Card>
-      <CardHeader className="text-center px-4 sm:px-6">
-        <CardTitle className="text-2xl sm:text-3xl font-bold">
+    <Card className="border-0 overflow-hidden shadow-xl">
+      <CardHeader className="text-center px-4 sm:px-6 py-8 pb-6 bg-gradient-to-b from-primary via-primary/90 to-primary/70 text-white relative">
+        <div className="absolute top-0 left-0 w-40 h-40 bg-accent/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-32 h-32 bg-accent/30 rounded-full blur-2xl"></div>
+        <CardTitle className="text-2xl sm:text-3xl font-bold relative z-10">
           Vagas Disponíveis
         </CardTitle>
-        <CardDescription className="text-base sm:text-lg pt-2">
+        <CardDescription className="text-base sm:text-lg pt-2 text-white/90 relative z-10">
           A sua oportunidade de fazer parte da nossa equipe!
         </CardDescription>
       </CardHeader>
-      <CardContent className="px-4 sm:px-6">
+      <CardContent className="px-4 sm:px-6 pt-6 pb-6 -mt-6 bg-gradient-to-b from-primary/10 via-primary/3 to-white">
         <Accordion type="single" collapsible className="w-full">
           {jobPostings.map((dept, index) => (
             <AccordionItem value={`item-${index}`} key={index}>
@@ -301,8 +313,8 @@ const JobsPage = ({ onBack }: { onBack: () => void }) => (
               </AccordionTrigger>
               <AccordionContent>
                 {dept.departmentDescription && (
-                  <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-muted/50 rounded-lg">
-                    <p className="text-xs sm:text-sm leading-relaxed whitespace-pre-line">
+                  <div className="mb-4 sm:mb-6 p-4 sm:p-5 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5 rounded-lg border-l-4 border-primary">
+                    <p className="text-xs sm:text-sm leading-relaxed whitespace-pre-line text-foreground/80">
                       {dept.departmentDescription}
                     </p>
                   </div>
@@ -311,15 +323,18 @@ const JobsPage = ({ onBack }: { onBack: () => void }) => (
                   {dept.positions.map((pos, posIndex) => (
                     <div
                       key={posIndex}
-                      className="p-3 sm:p-4 border rounded-lg"
+                      className="p-4 sm:p-5 border-2 rounded-lg bg-gradient-to-br from-white to-muted/10 hover:shadow-lg transition-all duration-300 hover:border-primary/50"
                     >
-                      <h3 className="font-semibold text-base sm:text-lg">
+                      <h3 className="font-semibold text-base sm:text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                         {pos.title}
                       </h3>
-                      <p className="mt-2 text-xs sm:text-sm leading-relaxed whitespace-pre-line">
+                      <p className="mt-2 text-xs sm:text-sm leading-relaxed whitespace-pre-line text-foreground/80">
                         {pos.description}
                       </p>
-                      <Button asChild className="mt-3 sm:mt-4 w-full sm:w-auto">
+                      <Button
+                        asChild
+                        className="mt-3 sm:mt-4 w-full sm:w-auto bg-gradient-to-r from-secondary via-secondary/90 to-secondary/80 hover:from-secondary/90 hover:to-secondary text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                      >
                         <a
                           href={pos.applyLink}
                           target="_blank"
@@ -340,7 +355,7 @@ const JobsPage = ({ onBack }: { onBack: () => void }) => (
   </div>
 );
 
-const AssociationWebsite = () => {
+function App() {
   const [page, setPage] = useState("home"); // "home" or "jobs"
 
   const renderPage = () => {
@@ -353,10 +368,24 @@ const AssociationWebsite = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4 sm:p-6 lg:p-8">
-      {renderPage()}
+    <div className="min-h-screen bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10 flex items-center justify-center p-4 sm:p-6 lg:p-8 relative overflow-hidden">
+      {/* Decorative background elements representing Mozambique flag colors */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-700"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/8 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-0 right-1/4 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-accent/6 rounded-full blur-3xl"></div>
+
+      {/* Geometric pattern overlay */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 border-4 border-primary rotate-45 rounded-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border-4 border-secondary -rotate-12 rounded-2xl"></div>
+        <div className="absolute top-1/3 right-1/3 w-32 h-32 border-4 border-accent rotate-12 rounded-xl"></div>
+      </div>
+
+      <div className="relative z-10">{renderPage()}</div>
     </div>
   );
-};
+}
 
-export default AssociationWebsite;
+export default App;
