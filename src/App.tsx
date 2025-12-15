@@ -325,7 +325,7 @@ const JobsPage = ({ onBack }: { onBack: () => void }) => (
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          Apply Now
+                          Submeta a sua candidatura
                         </a>
                       </Button>
                     </div>
