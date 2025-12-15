@@ -31,9 +31,10 @@ const associationData = {
 };
 
 const jobPostings = [
-    {
+  {
     department: "Departamento Académico",
-    departmentDescription: "O Departamento Académico e de Debates é uma das áreas essenciais da associação,"+
+    departmentDescription:
+      "O Departamento Académico e de Debates é uma das áreas essenciais da associação," +
       "responsável por promover o desenvolvimento académico, intelectual e crítico dos " +
       "estudantes. O seu papel é criar iniciativas que apoiem a aprendizagem, incentivem a " +
       "troca de conhecimentos e ofereçam espaços seguros para a expressão de ideias, o " +
@@ -42,17 +43,36 @@ const jobPostings = [
       {
         title: "Coordenador(a)",
         description:
-          "Procuramos um(a) líder académico(a) visionário(a) para coordenar o Departamento Académico e de Debates. Nesta posição estratégica, terás a responsabilidade de definir e implementar o rumo das atividades académicas da associação, promovendo o desenvolvimento intelectual da comunidade estudantil.\n\n" +
-          "Como Coordenador(a), serás responsável por elaborar os planos trimestrais e anuais do departamento, alinhando-os com os objetivos gerais da AEMOPOL. Representarás o departamento em reuniões oficiais e terás a importante função de supervisionar a equipa de responsáveis e assistentes, garantindo qualidade e coerência nas iniciativas.\n\n" +
-          "O teu papel incluirá validar temas para debates, cursos e grupos de estudo, assegurando relevância e impacto. Através de avaliações mensais de desempenho, liderarás a melhoria contínua das atividades, criando um ambiente académico estimulante e enriquecedor para todos os estudantes.",
+          "Procuramos um(a) líder académico(a) visionário(a) para coordenar o Departamento Académico e de Debates.\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Elaborar planos trimestrais e anuais do departamento\n" +
+          "• Representar o departamento em reuniões oficiais\n" +
+          "• Supervisionar a equipa de responsáveis e assistentes\n" +
+          "• Validar temas para debates, cursos e grupos de estudo\n" +
+          "• Avaliar mensalmente o desempenho das atividades\n" +
+          "• Alinhar iniciativas com os objetivos gerais da AEMOPOL\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Capacidade de liderança e visão estratégica\n" +
+          "• Excelente comunicação e relacionamento interpessoal\n" +
+          "• Organização e gestão de equipas\n" +
+          "• Paixão pelo desenvolvimento académico e intelectual",
         applyLink: "https://forms.gle/your-google-form-link",
       },
       {
         title: "Vice-Coordenador(a)",
         description:
-          "És organizado(a), tens capacidade de coordenação e gostas de trabalho colaborativo? Como Vice-Coordenador(a) do Departamento Académico, serás o braço direito do Coordenador, garantindo que todas as atividades académicas decorram com eficiência e profissionalismo.\n\n" +
-          "Nesta função, serás responsável pela gestão logística das atividades — desde a reserva de salas e definição de horários até à preparação de materiais necessários. Atuarás como elo de ligação entre o Departamento Académico e outros departamentos da associação, facilitando colaborações e garantindo comunicação fluida.\n\n" +
-          "Terás também a responsabilidade de substituir o Coordenador quando necessário, o que te dará uma visão completa da liderança do departamento e a oportunidade de desenvolver competências de gestão numa função de grande impacto.",
+          "Como Vice-Coordenador(a) do Departamento Académico, serás o braço direito do Coordenador, garantindo eficiência e profissionalismo em todas as atividades.\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Coordenar logística (salas, horários, materiais)\n" +
+          "• Fazer ligação com outros departamentos\n" +
+          "• Substituir o Coordenador quando necessário\n" +
+          "• Apoiar na preparação e execução de atividades\n" +
+          "• Garantir comunicação fluida entre equipas\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Organização e atenção aos detalhes\n" +
+          "• Capacidade de coordenação e multitasking\n" +
+          "• Espírito colaborativo e proativo\n" +
+          "• Flexibilidade e capacidade de adaptação",
         applyLink: "https://forms.gle/your-google-form-link",
       },
     ],
@@ -74,25 +94,54 @@ const jobPostings = [
       {
         title: "Coordenador(a)",
         description:
-          "Procuramos uma pessoa criativa, organizada e com espírito de liderança para coordenar o Departamento de Cultura e Eventos. Nesta função, terás a oportunidade de moldar a identidade cultural da associação e criar experiências memoráveis para a comunidade estudantil moçambicana na Polónia.\n\n" +
-          "Como Coordenador(a), serás responsável por desenvolver e implementar o plano anual de atividades, trabalhando em estreita colaboração com a Direção da AEMOPOL e outros departamentos. Terás um papel ativo no Conselho Geral, representando as necessidades do departamento e estabelecendo pontes com instituições externas, incluindo a Embaixada, para garantir apoio nos eventos oficiais.\n\n" +
-          "Procuramos alguém com capacidade de gestão de equipas, visão estratégica para identificar parcerias valiosas (universidades, espaços culturais, estabelecimentos locais) e habilidade para transformar ideias em eventos impactantes que unam e celebrem a nossa comunidade.",
+          "Lidera o Departamento de Cultura e Eventos e molda a identidade cultural da AEMOPOL na Polónia!\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Desenvolver e implementar o plano anual de atividades\n" +
+          "• Coordenar com a Direção e outros departamentos\n" +
+          "• Participar ativamente no Conselho Geral\n" +
+          "• Estabelecer parcerias com instituições e embaixada\n" +
+          "• Aprovar propostas e gerir calendário de eventos\n" +
+          "• Supervisionar a equipa do departamento\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Criatividade e espírito de liderança\n" +
+          "• Visão estratégica e capacidade de gestão\n" +
+          "• Excelente comunicação e networking\n" +
+          "• Paixão pela cultura moçambicana",
         applyLink: "https://forms.gle/your-google-form-link",
       },
       {
         title: "Responsável de Cultura e Tradições",
         description:
-          "És apaixonado(a) pela cultura moçambicana e queres partilhar essa paixão com a comunidade estudantil na Polónia? Procuramos alguém que seja guardião da nossa identidade cultural e que consiga traduzi-la em experiências autênticas e envolventes.\n\n" +
-          "Nesta posição, serás responsável por conceber e desenvolver eventos que celebrem as diversas expressões culturais moçambicanas — desde a música e dança até à gastronomia, literatura e desporto. Trabalharás para garantir que cada evento da associação tenha elementos culturais genuínos que conectem os estudantes às suas raízes.\n\n" +
-          "Terás também a oportunidade de estabelecer colaborações com artistas moçambicanos na Polónia e grupos culturais locais, criando pontes entre comunidades e enriquecendo a experiência cultural de todos.",
+          "Celebra e promove a cultura moçambicana na Polónia através de eventos autênticos e envolventes!\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Criar eventos de música, dança, gastronomia e desporto\n" +
+          "• Garantir autenticidade cultural em todos os eventos\n" +
+          "• Colaborar com artistas moçambicanos na Polónia\n" +
+          "• Estabelecer parcerias com grupos culturais locais\n" +
+          "• Desenvolver iniciativas de literatura e artes\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Paixão pela cultura moçambicana\n" +
+          "• Criatividade e sensibilidade cultural\n" +
+          "• Capacidade de organização de eventos\n" +
+          "• Networking e estabelecimento de parcerias",
         applyLink: "https://forms.gle/your-google-form-link",
       },
       {
         title: "Responsável de Eventos e Logística",
         description:
-          "Se és uma pessoa orientada para os detalhes, com excelentes capacidades organizacionais e gostas de ver projetos tomarem forma, esta posição é para ti. Como Responsável de Eventos e Logística, serás a força operacional que transforma ideias em realidade.\n\n" +
-          "O teu papel será garantir que todos os aspetos práticos dos eventos funcionem sem falhas — desde a reserva de espaços e equipamentos até à coordenação de transporte e gestão de voluntários. Criarás sistemas de organização eficientes, desenvolverás checklists detalhadas e assegurarás que todos os prazos sejam cumpridos.\n\n" +
-          "Durante os eventos, terás a responsabilidade de supervisionar as operações no terreno, resolver imprevistos e coordenar as equipas de apoio, garantindo que cada atividade decorra com sucesso e profissionalismo.",
+          "Transforma ideias em realidade garantindo que todos os eventos decorram sem falhas!\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Gerir espaços, equipamentos e transporte\n" +
+          "• Criar checklists e garantir cumprimento de prazos\n" +
+          "• Coordenar voluntários durante eventos\n" +
+          "• Supervisionar operações no terreno\n" +
+          "• Resolver imprevistos com agilidade\n" +
+          "• Garantir qualidade na execução de eventos\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Orientação para detalhes e organização\n" +
+          "• Capacidade de gestão de equipas\n" +
+          "• Resolução de problemas sob pressão\n" +
+          "• Proatividade e profissionalismo",
         applyLink: "https://forms.gle/your-google-form-link",
       },
     ],
@@ -110,33 +159,93 @@ const jobPostings = [
       {
         title: "Coordenador(a)",
         description:
-          "Responsável por liderar o departamento, definir a estratégia de comunicação, planear conteúdos, " +
-          "garantir a coerência da identidade visual, supervisionar publicações e fazer a ligação com os restantes órgãos da associação.",
+          "Lidera a estratégia de comunicação da AEMOPOL e fortalece a identidade da associação!\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Definir estratégia de comunicação do departamento\n" +
+          "• Planear e coordenar conteúdos\n" +
+          "• Garantir coerência da identidade visual\n" +
+          "• Supervisionar todas as publicações\n" +
+          "• Fazer ligação com outros departamentos\n" +
+          "• Coordenar equipa de marketing\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Visão estratégica de comunicação\n" +
+          "• Liderança e gestão de equipas\n" +
+          "• Criatividade e pensamento analítico\n" +
+          "• Conhecimento de marketing digital",
         applyLink: "https://forms.gle/your-google-form-link",
       },
       {
         title: "Social Media Manager",
         description:
-          "Responsável pela gestão diária das redes sociais, criação e edição de conteúdos (incluindo fotos e vídeos)," +
-          " copywriting, monitorização de interações e análise de métricas de desempenho.",
+          "Gere a presença digital da AEMOPOL e conecta a comunidade estudantil através das redes sociais!\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Gestão diária das redes sociais\n" +
+          "• Criação e edição de conteúdos (fotos e vídeos)\n" +
+          "• Copywriting atrativo e envolvente\n" +
+          "• Monitorização de interações e comunidade\n" +
+          "• Análise de métricas de desempenho\n" +
+          "• Desenvolver estratégias de engagement\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Experiência com redes sociais\n" +
+          "• Criatividade e capacidade de escrita\n" +
+          "• Conhecimento de ferramentas de design\n" +
+          "• Análise de dados e métricas",
         applyLink: "https://forms.gle/your-google-form-link",
       },
     ],
   },
   {
-    department: " Departamento de Tecnologia e Informação",
-    departmentDescription: "",
+    department: "Departamento de Tecnologia e Informação",
+    departmentDescription:
+      "O Departamento de Tecnologia e Informação é responsável por desenvolver e manter a infraestrutura digital da AEMOPOL, " +
+      "criando soluções tecnológicas que facilitam a comunicação, gestão e operação da associação. O departamento trabalha para garantir que a " +
+      "presença digital da associação seja moderna, eficiente e acessível a todos os estudantes.",
     positions: [
       {
         title: "Frontend Developer",
         description:
-          "We are looking for a skilled Frontend Developer to join our team. The ideal candidate is passionate about creating beautiful and intuitive user interfaces. Responsibilities include translating UI/UX design wireframes to actual code and ensuring the technical feasibility of UI/UX designs.",
+          "Cria interfaces intuitivas e experiências digitais envolventes para a comunidade AEMOPOL!\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Desenvolver e manter website e aplicações\n" +
+          "• Transformar designs em código funcional e responsivo\n" +
+          "• Criar interfaces acessíveis e performantes\n" +
+          "• Trabalhar com tecnologias modernas\n" +
+          "• Colaborar com designers e backend\n\n" +
+          "💻 Requisitos Técnicos:\n" +
+          "• Estudante de IT, Eng. Informática ou áreas relacionadas\n" +
+          "• Conhecimentos em HTML, CSS e JavaScript\n" +
+          "• Familiaridade com frameworks (React, Vue, etc.)\n" +
+          "• Experiência com design responsivo\n" +
+          "• Vontade de aprender e evoluir\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Paixão por criar experiências digitais\n" +
+          "• Atenção aos detalhes visuais\n" +
+          "• Capacidade de trabalho em equipa\n" +
+          "• Proatividade e resolução de problemas",
         applyLink: "https://forms.gle/your-google-form-link",
       },
       {
         title: "Backend Developer",
         description:
-          "We are seeking an experienced Backend Developer to be responsible for the server-side web application logic and integration of the work frontend developers do. You will be responsible for managing the interchange of data between the server and the users, as well as developing and maintaining all server-side network components.",
+          "Constrói sistemas robustos que sustentam as operações digitais da AEMOPOL!\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Desenvolver e manter APIs e serviços\n" +
+          "• Gerir bases de dados e integridade dos dados\n" +
+          "• Implementar lógica de negócio e autenticação\n" +
+          "• Integrar sistemas externos (pagamentos, emails)\n" +
+          "• Otimizar performance e segurança\n" +
+          "• Criar documentação técnica\n\n" +
+          "💻 Requisitos Técnicos:\n" +
+          "• Estudante de IT, Eng. Informática ou áreas relacionadas\n" +
+          "• Conhecimento em linguagem backend (Node.js, Python, Java)\n" +
+          "• Compreensão de bases de dados (SQL e/ou NoSQL)\n" +
+          "• Familiaridade com APIs RESTful ou GraphQL\n" +
+          "• Conhecimento de autenticação (JWT, OAuth)\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Resolução de problemas complexos\n" +
+          "• Pensamento arquitetural\n" +
+          "• Atenção à segurança e performance\n" +
+          "• Capacidade de documentação técnica",
         applyLink: "https://forms.gle/your-google-form-link",
       },
     ],
@@ -207,7 +316,7 @@ const JobsPage = ({ onBack }: { onBack: () => void }) => (
                       <h3 className="font-semibold text-base sm:text-lg">
                         {pos.title}
                       </h3>
-                      <p className="mt-2 text-xs sm:text-sm leading-relaxed">
+                      <p className="mt-2 text-xs sm:text-sm leading-relaxed whitespace-pre-line">
                         {pos.description}
                       </p>
                       <Button asChild className="mt-3 sm:mt-4 w-full sm:w-auto">
