@@ -59,14 +59,33 @@ const jobPostings = [
         applyLink: "https://forms.gle/your-google-form-link",
       },
       {
-        title: "Vice-Coordenador(a)",
+        title: "Assessor(a) do Coordenador",
         description:
-          "Como Vice-Coordenador(a) do Departamento Académico, serás o braço direito do Coordenador, garantindo eficiência e profissionalismo em todas as atividades.\n\n" +
+          "Como Assessor(a) do Coordenador, serás fundamental no apoio direto ao Coordenador e na gestão eficiente das atividades do departamento.\n\n" +
           "📋 Principais Responsabilidades:\n" +
+          "• Apoiar o Coordenador na gestão administrativa\n" +
           "• Coordenar logística (salas, horários, materiais)\n" +
           "• Fazer ligação com outros departamentos\n" +
-          "• Substituir o Coordenador quando necessário\n" +
           "• Apoiar na preparação e execução de atividades\n" +
+          "• Monitorizar prazos e acompanhar tarefas\n" +
+          "• Garantir comunicação fluida entre equipas\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Organização e atenção aos detalhes\n" +
+          "• Capacidade de coordenação e multitasking\n" +
+          "• Espírito colaborativo e proativo\n" +
+          "• Flexibilidade e capacidade de adaptação",
+        applyLink: "https://forms.gle/your-google-form-link",
+      },
+      {
+        title: "Assessor(a) do Coordenador",
+        description:
+          "Como Assessor(a) do Coordenador, serás fundamental no apoio direto ao Coordenador e na gestão eficiente das atividades do departamento.\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Apoiar o Coordenador na gestão administrativa\n" +
+          "• Coordenar logística (salas, horários, materiais)\n" +
+          "• Fazer ligação com outros departamentos\n" +
+          "• Apoiar na preparação e execução de atividades\n" +
+          "• Monitorizar prazos e acompanhar tarefas\n" +
           "• Garantir comunicação fluida entre equipas\n\n" +
           "✨ Perfil Ideal:\n" +
           "• Organização e atenção aos detalhes\n" +
