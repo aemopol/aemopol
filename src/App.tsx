@@ -56,7 +56,7 @@ const jobPostings = [
           "• Excelente comunicação e relacionamento interpessoal\n" +
           "• Organização e gestão de equipas\n" +
           "• Paixão pelo desenvolvimento académico e intelectual",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
       },
       {
         title: "Assessor(a) do Coordenador",
@@ -74,7 +74,7 @@ const jobPostings = [
           "• Capacidade de coordenação e multitasking\n" +
           "• Espírito colaborativo e proativo\n" +
           "• Flexibilidade e capacidade de adaptação",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
       },
       {
         title: "Assessor(a) do Coordenador",
@@ -92,7 +92,7 @@ const jobPostings = [
           "• Capacidade de coordenação e multitasking\n" +
           "• Espírito colaborativo e proativo\n" +
           "• Flexibilidade e capacidade de adaptação",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
       },
     ],
   },
@@ -126,7 +126,7 @@ const jobPostings = [
           "• Visão estratégica e capacidade de gestão\n" +
           "• Excelente comunicação e networking\n" +
           "• Paixão pela cultura moçambicana",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
       },
       {
         title: "Responsável de Cultura e Tradições",
@@ -143,7 +143,7 @@ const jobPostings = [
           "• Criatividade e sensibilidade cultural\n" +
           "• Capacidade de organização de eventos\n" +
           "• Networking e estabelecimento de parcerias",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
       },
       {
         title: "Responsável de Eventos e Logística",
@@ -161,7 +161,7 @@ const jobPostings = [
           "• Capacidade de gestão de equipas\n" +
           "• Resolução de problemas sob pressão\n" +
           "• Proatividade e profissionalismo",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
       },
     ],
   },
@@ -191,7 +191,7 @@ const jobPostings = [
           "• Liderança e gestão de equipas\n" +
           "• Criatividade e pensamento analítico\n" +
           "• Conhecimento de marketing digital",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
       },
       {
         title: "Social Media Manager",
@@ -209,7 +209,7 @@ const jobPostings = [
           "• Criatividade e capacidade de escrita\n" +
           "• Conhecimento de ferramentas de design\n" +
           "• Análise de dados e métricas",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
       },
     ],
   },
@@ -241,7 +241,7 @@ const jobPostings = [
           "• Atenção aos detalhes visuais\n" +
           "• Capacidade de trabalho em equipa\n" +
           "• Proatividade e resolução de problemas",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
       },
       {
         title: "Backend Developer",
@@ -265,7 +265,7 @@ const jobPostings = [
           "• Pensamento arquitetural\n" +
           "• Atenção à segurança e performance\n" +
           "• Capacidade de documentação técnica",
-        applyLink: "https://forms.gle/your-google-form-link",
+        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
       },
     ],
   },
