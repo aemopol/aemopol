@@ -41,7 +41,7 @@ const jobPostings = [
       "debate construtivo e o crescimento académico coletivo.",
     positions: [
       {
-        title: "Coordenador(a)",
+        title: "Director(a)",
         description:
           "Procuramos um(a) líder académico(a) visionário(a) para coordenar o Departamento Académico e de Debates.\n\n" +
           "📋 Principais Responsabilidades:\n" +
@@ -56,12 +56,13 @@ const jobPostings = [
           "• Excelente comunicação e relacionamento interpessoal\n" +
           "• Organização e gestão de equipas\n" +
           "• Paixão pelo desenvolvimento académico e intelectual",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
       },
       {
-        title: "Assessor(a) do Coordenador",
+        title: "Assessor(a)",
         description:
-          "Como Assessor(a) do Coordenador, serás fundamental no apoio direto ao Coordenador e na gestão eficiente das atividades do departamento.\n\n" +
+          "Como Assessor(a), serás fundamental no apoio direto ao Coordenador e na gestão eficiente das atividades do departamento.\n\n" +
           "📋 Principais Responsabilidades:\n" +
           "• Apoiar o Coordenador na gestão administrativa\n" +
           "• Coordenar logística (salas, horários, materiais)\n" +
@@ -74,12 +75,13 @@ const jobPostings = [
           "• Capacidade de coordenação e multitasking\n" +
           "• Espírito colaborativo e proativo\n" +
           "• Flexibilidade e capacidade de adaptação",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
       },
       {
-        title: "Assessor(a) do Coordenador",
+        title: "Assessor(a)",
         description:
-          "Como Assessor(a) do Coordenador, serás fundamental no apoio direto ao Coordenador e na gestão eficiente das atividades do departamento.\n\n" +
+          "Como Assessor(a), serás fundamental no apoio direto ao Coordenador e na gestão eficiente das atividades do departamento.\n\n" +
           "📋 Principais Responsabilidades:\n" +
           "• Apoiar o Coordenador na gestão administrativa\n" +
           "• Coordenar logística (salas, horários, materiais)\n" +
@@ -92,7 +94,8 @@ const jobPostings = [
           "• Capacidade de coordenação e multitasking\n" +
           "• Espírito colaborativo e proativo\n" +
           "• Flexibilidade e capacidade de adaptação",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
       },
     ],
   },
@@ -111,7 +114,7 @@ const jobPostings = [
       "• Avaliar o impacto das iniciativas e recolher feedback para melhorias futuras.",
     positions: [
       {
-        title: "Coordenador(a)",
+        title: "Director(a)",
         description:
           "Lidera o Departamento de Cultura e Eventos e molda a identidade cultural da AEMOPOL na Polónia!\n\n" +
           "📋 Principais Responsabilidades:\n" +
@@ -126,7 +129,8 @@ const jobPostings = [
           "• Visão estratégica e capacidade de gestão\n" +
           "• Excelente comunicação e networking\n" +
           "• Paixão pela cultura moçambicana",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
       },
       {
         title: "Responsável de Cultura e Tradições",
@@ -143,7 +147,8 @@ const jobPostings = [
           "• Criatividade e sensibilidade cultural\n" +
           "• Capacidade de organização de eventos\n" +
           "• Networking e estabelecimento de parcerias",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
       },
       {
         title: "Responsável de Eventos e Logística",
@@ -161,7 +166,8 @@ const jobPostings = [
           "• Capacidade de gestão de equipas\n" +
           "• Resolução de problemas sob pressão\n" +
           "• Proatividade e profissionalismo",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
       },
     ],
   },
@@ -176,7 +182,7 @@ const jobPostings = [
       "• Realizar análises de desempenho e sugerir melhorias contínuas.",
     positions: [
       {
-        title: "Coordenador(a)",
+        title: "Director(a)",
         description:
           "Lidera a estratégia de comunicação da AEMOPOL e fortalece a identidade da associação!\n\n" +
           "📋 Principais Responsabilidades:\n" +
@@ -191,7 +197,8 @@ const jobPostings = [
           "• Liderança e gestão de equipas\n" +
           "• Criatividade e pensamento analítico\n" +
           "• Conhecimento de marketing digital",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
       },
       {
         title: "Social Media Manager",
@@ -209,7 +216,8 @@ const jobPostings = [
           "• Criatividade e capacidade de escrita\n" +
           "• Conhecimento de ferramentas de design\n" +
           "• Análise de dados e métricas",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
       },
     ],
   },
@@ -220,6 +228,32 @@ const jobPostings = [
       "criando soluções tecnológicas que facilitam a comunicação, gestão e operação da associação. O departamento trabalha para garantir que a " +
       "presença digital da associação seja moderna, eficiente e acessível a todos os estudantes.",
     positions: [
+      {
+        title: "Director(a)",
+        description:
+          "Lidera o Departamento de Tecnologia e Informação e impulsiona a inovação digital na AEMOPOL!\n\n" +
+          "📋 Principais Responsabilidades:\n" +
+          "• Definir estratégia tecnológica do departamento\n" +
+          "• Planear e coordenar projetos digitais\n" +
+          "• Garantir segurança e eficiência dos sistemas\n" +
+          "• Supervisionar manutenção de plataformas\n" +
+          "• Fazer ligação com outros departamentos\n" +
+          "• Coordenar equipa de TI\n\n" +
+          "💻 Requisitos Técnicos:\n" +
+          "• Estudante de IT, Eng. Informática, Ciências da Computação ou áreas relacionadas\n" +
+          "• Conhecimento sólido de desenvolvimento web (frontend e/ou backend)\n" +
+          "• Experiência com gestão de projetos tecnológicos\n" +
+          "• Familiaridade com sistemas de controlo de versão (Git)\n" +
+          "• Compreensão de infraestrutura digital e segurança\n\n" +
+          "✨ Perfil Ideal:\n" +
+          "• Visão estratégica de tecnologia\n" +
+          "• Liderança e gestão de equipas técnicas\n" +
+          "• Capacidade de tomada de decisões técnicas\n" +
+          "• Excelente comunicação técnica e não-técnica\n" +
+          "• Paixão por inovação digital",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
+      },
       {
         title: "Frontend Developer",
         description:
@@ -241,7 +275,8 @@ const jobPostings = [
           "• Atenção aos detalhes visuais\n" +
           "• Capacidade de trabalho em equipa\n" +
           "• Proatividade e resolução de problemas",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
       },
       {
         title: "Backend Developer",
@@ -265,7 +300,8 @@ const jobPostings = [
           "• Pensamento arquitetural\n" +
           "• Atenção à segurança e performance\n" +
           "• Capacidade de documentação técnica",
-        applyLink: "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
+        applyLink:
+          "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
       },
     ],
   },
