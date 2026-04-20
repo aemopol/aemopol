@@ -18,16 +18,27 @@ import { ArrowLeft } from "lucide-react";
 
 // --- Data ---
 const associationData = {
-  name: "Associação de Estudantes Moçambicanos na Polónia",
-  introduction:
-    "Sejam todos muito bem-vindos à Associação de Estudantes!" +
-    "\n\nÉ com grande satisfação que abrimos as portas deste espaço de participação, união e representação estudantil." +
-    " A Associação de Estudantes existe para dar voz aos alunos, promover iniciativas culturais, académicas e sociais, " +
-    "e fortalecer o espírito de cooperação e cidadania entre todos.\n\nEste é um espaço construído por e para estudantes, " +
-    "onde cada ideia conta, cada opinião importa e cada participação faz a diferença. Encorajamos todos a envolverem-se ativamente," +
-    " a partilharem propostas, a colaborarem em projetos e a ajudarem a construir uma comunidade mais justa, dinâmica e inclusiva." +
-    "\n\nJuntos, podemos transformar desafios em oportunidades e fazer da nossa experiência estudantil um caminho de crescimento, aprendizagem e sucesso." +
-    "\n\nSejam muito bem-vindos e contem connosco!",
+  name: "Portal de Candidaturas da AMOP",
+  subtitle:
+    "Candidata-te e faz parte da equipa que constrói a Associação de Residentes Moçambicanos na Polónia.",
+  about:
+    "Este é o espaço oficial de candidaturas da AMOP para os seus diferentes departamentos e posições.\n\n" +
+    "Aqui podes explorar as vagas disponíveis e submeter a tua candidatura para fazer parte da equipa que organiza, " +
+    "representa e desenvolve a comunidade estudantil moçambicana na Polónia.",
+  whatYouFind: [
+    "Departamentos e funções disponíveis",
+    "Requisitos de candidatura",
+    "Processo de seleção transparente",
+    "Oportunidades de participação ativa na AMOP",
+  ],
+  howItWorks: [
+    "Explora as vagas disponíveis",
+    "Escolhe o departamento onde te queres candidatar",
+    "Preenche o formulário de candidatura",
+    "Aguarda contacto da equipa de avaliação",
+  ],
+  important:
+    "As candidaturas são avaliadas com base em compromisso, motivação e alinhamento com os objetivos da AMOP.",
 };
 
 const jobPostings = [
@@ -315,23 +326,65 @@ const HomePage = ({ onViewJobs }: { onViewJobs: () => void }) => (
       <div className="absolute top-0 right-0 w-32 h-32 bg-accent/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/30 rounded-full blur-2xl"></div>
       <CardTitle className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight relative z-10">
-        {associationData.name}
+        Bem-vindo ao {associationData.name}
       </CardTitle>
       <CardDescription className="text-base sm:text-lg pt-2 text-white/90 relative z-10">
-        Juntos para um futuro melhor.
+        {associationData.subtitle}
       </CardDescription>
     </CardHeader>
-    <CardContent className="px-4 sm:px-6 py-10 -mt-6 bg-gradient-to-b from-primary/10 via-primary/3 to-white">
-      <p className="text-sm sm:text-base text-center whitespace-pre-line leading-relaxed">
-        {associationData.introduction}
-      </p>
+    <CardContent className="px-4 sm:px-6 py-8 -mt-6 bg-gradient-to-b from-primary/10 via-primary/3 to-white space-y-6">
+
+      {/* Sobre este portal */}
+      <div>
+        <h2 className="text-base sm:text-lg font-semibold text-primary mb-2">Sobre este portal</h2>
+        <p className="text-sm sm:text-base leading-relaxed whitespace-pre-line text-foreground/80">
+          {associationData.about}
+        </p>
+      </div>
+
+      {/* O que podes encontrar aqui */}
+      <div>
+        <h2 className="text-base sm:text-lg font-semibold text-primary mb-2">O que podes encontrar aqui</h2>
+        <ul className="space-y-1">
+          {associationData.whatYouFind.map((item, i) => (
+            <li key={i} className="flex items-start gap-2 text-sm sm:text-base text-foreground/80">
+              <span className="mt-1 w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Como funciona */}
+      <div>
+        <h2 className="text-base sm:text-lg font-semibold text-primary mb-2">Como funciona</h2>
+        <ol className="space-y-1">
+          {associationData.howItWorks.map((step, i) => (
+            <li key={i} className="flex items-start gap-3 text-sm sm:text-base text-foreground/80">
+              <span className="shrink-0 w-5 h-5 rounded-full bg-primary text-white text-xs flex items-center justify-center font-semibold mt-0.5">
+                {i + 1}
+              </span>
+              {step}
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      {/* Importante */}
+      <div className="p-4 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5 rounded-lg border-l-4 border-secondary">
+        <h2 className="text-base sm:text-lg font-semibold text-primary mb-1">Importante</h2>
+        <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+          {associationData.important}
+        </p>
+      </div>
+
     </CardContent>
     <CardFooter className="flex justify-center px-4 sm:px-6 pb-8 pt-4 bg-gradient-to-b from-white via-muted/5 to-muted/10">
       <Button
         onClick={onViewJobs}
         className="w-full sm:w-auto bg-gradient-to-r from-secondary via-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
       >
-        Veja as Vagas Disponíveis
+        Ver vagas disponíveis
       </Button>
     </CardFooter>
   </Card>
@@ -423,20 +476,21 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10 flex items-center justify-center p-4 sm:p-6 lg:p-8 relative overflow-hidden">
-      {/* Decorative background elements representing Mozambique flag colors */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-700"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/8 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div className="absolute top-0 right-1/4 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-accent/6 rounded-full blur-3xl"></div>
+    <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8 relative overflow-hidden" style={{ backgroundColor: "#f8f6f0" }}>
+      {/* Logo watermark — multiply blends colored lines into background */}
+      <img
+        src="/logo.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-contain pointer-events-none select-none"
+        style={{ opacity: 0.18, mixBlendMode: "multiply" }}
+      />
 
-      {/* Geometric pattern overlay */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 border-4 border-primary rotate-45 rounded-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 border-4 border-secondary -rotate-12 rounded-2xl"></div>
-        <div className="absolute top-1/3 right-1/3 w-32 h-32 border-4 border-accent rotate-12 rounded-xl"></div>
-      </div>
+      {/* Soft colour washes matching logo palette */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full blur-3xl animate-pulse" style={{ backgroundColor: "rgba(0,100,0,0.07)" }}></div>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full blur-3xl animate-pulse delay-700" style={{ backgroundColor: "rgba(204,0,0,0.07)" }}></div>
+      <div className="absolute top-0 right-0 w-80 h-80 rounded-full blur-3xl" style={{ backgroundColor: "rgba(255,194,0,0.09)" }}></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full blur-3xl animate-pulse delay-1000" style={{ backgroundColor: "rgba(255,194,0,0.06)" }}></div>
 
       <div className="relative z-10">{renderPage()}</div>
     </div>
