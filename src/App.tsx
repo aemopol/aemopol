@@ -81,7 +81,7 @@ const jobPostings: Department[] = [
       "👤 Vice-Presidente\n" +
       "👤 Membro",
     departmentApplyLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+      "https://forms.gle/CwDkjho1Hcab8ZfX7",
     positions: [],
   },
   {
@@ -112,7 +112,7 @@ const jobPostings: Department[] = [
       "👤 Presidente\n" +
       "👤 Secretário",
     departmentApplyLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+      "https://forms.gle/CwDkjho1Hcab8ZfX7",
     positions: [],
   },
   {
@@ -150,7 +150,7 @@ const jobPostings: Department[] = [
       "👤 Membro\n" +
       "👤 Membro",
     departmentApplyLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
+      "https://forms.gle/CwDkjho1Hcab8ZfX7",
     positions: [],
   },
   {
@@ -190,7 +190,7 @@ const jobPostings: Department[] = [
       "👤 Membro\n" +
       "👤 Membro",
     departmentApplyLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
+      "https://forms.gle/CwDkjho1Hcab8ZfX7",
     positions: [],
   },
   {
@@ -226,7 +226,7 @@ const jobPostings: Department[] = [
       "👤 Membro\n" +
       "👤 Membro",
     departmentApplyLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+      "https://forms.gle/CwDkjho1Hcab8ZfX7",
     positions: [],
   },
   {
@@ -263,7 +263,7 @@ const jobPostings: Department[] = [
       "👤 Chefe de Departamento\n" +
       "👤 Membro",
     departmentApplyLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
+      "https://forms.gle/CwDkjho1Hcab8ZfX7",
     positions: [],
   },
   {
@@ -299,7 +299,7 @@ const jobPostings: Department[] = [
       "👤 Membro\n" +
       "👤 Membro",
     departmentApplyLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+      "https://forms.gle/CwDkjho1Hcab8ZfX7",
     positions: [],
   },
 ];
