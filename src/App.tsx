@@ -16,6 +16,20 @@ import {
 } from "@/components/ui/accordion";
 import { ArrowLeft } from "lucide-react";
 
+// --- Types ---
+type Position = {
+  title: string;
+  description?: string;
+  applyLink?: string;
+};
+
+type Department = {
+  department: string;
+  departmentDescription: string;
+  departmentApplyLink?: string;
+  positions: Position[];
+};
+
 // --- Data ---
 const associationData = {
   name: "Portal de Candidaturas da AMOP",
@@ -41,280 +55,252 @@ const associationData = {
     "As candidaturas são avaliadas com base em compromisso, motivação e alinhamento com os objetivos da AMOP.",
 };
 
-const jobPostings = [
+const jobPostings: Department[] = [
   {
-    department: "Departamento Académico",
+    department: "Comítê de Auditoria Interna",
     departmentDescription:
-      "O Departamento Académico e de Debates é uma das áreas essenciais da associação," +
-      "responsável por promover o desenvolvimento académico, intelectual e crítico dos " +
-      "estudantes. O seu papel é criar iniciativas que apoiem a aprendizagem, incentivem a " +
-      "troca de conhecimentos e ofereçam espaços seguros para a expressão de ideias, o " +
-      "debate construtivo e o crescimento académico coletivo.",
-    positions: [
-      {
-        title: "Director(a)",
-        description:
-          "Procuramos um(a) líder académico(a) visionário(a) para coordenar o Departamento Académico e de Debates.\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Elaborar planos trimestrais e anuais do departamento\n" +
-          "• Representar o departamento em reuniões oficiais\n" +
-          "• Supervisionar a equipa de responsáveis e assistentes\n" +
-          "• Validar temas para debates, cursos e grupos de estudo\n" +
-          "• Avaliar mensalmente o desempenho das atividades\n" +
-          "• Alinhar iniciativas com os objetivos gerais da AEMOPOL\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Capacidade de liderança e visão estratégica\n" +
-          "• Excelente comunicação e relacionamento interpessoal\n" +
-          "• Organização e gestão de equipas\n" +
-          "• Paixão pelo desenvolvimento académico e intelectual",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
-      },
-      {
-        title: "Assessor(a)",
-        description:
-          "Como Assessor(a), serás fundamental no apoio direto ao Coordenador e na gestão eficiente das atividades do departamento.\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Apoiar o Coordenador na gestão administrativa\n" +
-          "• Coordenar logística (salas, horários, materiais)\n" +
-          "• Fazer ligação com outros departamentos\n" +
-          "• Apoiar na preparação e execução de atividades\n" +
-          "• Monitorizar prazos e acompanhar tarefas\n" +
-          "• Garantir comunicação fluida entre equipas\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Organização e atenção aos detalhes\n" +
-          "• Capacidade de coordenação e multitasking\n" +
-          "• Espírito colaborativo e proativo\n" +
-          "• Flexibilidade e capacidade de adaptação",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
-      },
-      {
-        title: "Assessor(a)",
-        description:
-          "Como Assessor(a), serás fundamental no apoio direto ao Coordenador e na gestão eficiente das atividades do departamento.\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Apoiar o Coordenador na gestão administrativa\n" +
-          "• Coordenar logística (salas, horários, materiais)\n" +
-          "• Fazer ligação com outros departamentos\n" +
-          "• Apoiar na preparação e execução de atividades\n" +
-          "• Monitorizar prazos e acompanhar tarefas\n" +
-          "• Garantir comunicação fluida entre equipas\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Organização e atenção aos detalhes\n" +
-          "• Capacidade de coordenação e multitasking\n" +
-          "• Espírito colaborativo e proativo\n" +
-          "• Flexibilidade e capacidade de adaptação",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
-      },
-    ],
+      "O Comítê de Auditoria Interna é um órgão independente de supervisão, responsável por assegurar a transparência, integridade e conformidade na gestão financeira e administrativa da Associação. " +
+      "Atua como um mecanismo de controlo interno, promovendo boas práticas de governação, responsabilidade e prestação de contas.\n\n" +
+      "📋 Principais funções:\n" +
+      "• Realizar auditorias financeiras periódicas, garantindo a exatidão, consistência e rastreabilidade das contas da Associação;\n" +
+      "• Avaliar a eficiência, eficácia e conformidade dos processos financeiros e administrativos;\n" +
+      "• Monitorizar o cumprimento de normas internas, regulamentos aplicáveis e boas práticas de gestão;\n" +
+      "• Preparar relatórios de auditoria claros e estruturados, incluindo recomendações concretas para melhoria contínua;\n" +
+      "• Efetuar reconciliações financeiras e validar a correspondência entre registos contabilísticos e fluxos reais;\n" +
+      "• Identificar riscos financeiros e propor medidas preventivas e corretivas;\n" +
+      "• Atuar com total independência face aos órgãos executivos, garantindo imparcialidade nas suas análises e decisões.\n\n" +
+      "✅ Critérios para candidatura:\n" +
+      "• Experiência prévia em auditoria, contabilidade ou áreas financeiras (preferencial);\n" +
+      "• Formação académica em Finanças, Contabilidade, Fiscalidade, Gestão ou áreas relacionadas;\n" +
+      "• Conhecimento de princípios de conformidade regulatória e boas práticas financeiras;\n" +
+      "• Elevado sentido de ética, responsabilidade e confidencialidade;\n" +
+      "• Capacidade de análise crítica, rigor técnico e atenção ao detalhe;\n" +
+      "• Boa capacidade de comunicação escrita para elaboração de relatórios.\n\n" +
+      "Posições abertas:\n" +
+      "👤 Presidente\n" +
+      "👤 Vice-Presidente\n" +
+      "👤 Membro",
+    departmentApplyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+    positions: [],
   },
   {
-    department: "Departamento de Cultura e Eventos",
+    department: "Assembleia Geral",
     departmentDescription:
-      "O Departamento de Cultura e Eventos é responsável por promover a identidade cultural moçambicana na Polónia, " +
-      "criar momentos de convívio, integração e celebração entre os estudantes, e organizar iniciativas que fortaleçam o sentido de comunidade. " +
-      "O seu objetivo é proporcionar experiências enriquecedoras, tanto do ponto de vista cultural como social, e garantir que todos os membros se sintam representados e acolhidos.\n\n" +
-      "As suas responsabilidades incluem:\n" +
-      "• Planear e coordenar eventos culturais, sociais e académicos;\n" +
-      "• Promover a cultura moçambicana através de iniciativas temáticas;\n" +
-      "• Facilitar a integração de novos estudantes;\n" +
-      "• Estabelecer parcerias com instituições culturais e outras associações;\n" +
-      "• Gerir logística, orçamentos e comunicação de eventos;\n" +
-      "• Avaliar o impacto das iniciativas e recolher feedback para melhorias futuras.",
-    positions: [
-      {
-        title: "Director(a)",
-        description:
-          "Lidera o Departamento de Cultura e Eventos e molda a identidade cultural da AEMOPOL na Polónia!\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Desenvolver e implementar o plano anual de atividades\n" +
-          "• Coordenar com a Direção e outros departamentos\n" +
-          "• Participar ativamente no Conselho Geral\n" +
-          "• Estabelecer parcerias com instituições e embaixada\n" +
-          "• Aprovar propostas e gerir calendário de eventos\n" +
-          "• Supervisionar a equipa do departamento\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Criatividade e espírito de liderança\n" +
-          "• Visão estratégica e capacidade de gestão\n" +
-          "• Excelente comunicação e networking\n" +
-          "• Paixão pela cultura moçambicana",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
-      },
-      {
-        title: "Responsável de Cultura e Tradições",
-        description:
-          "Celebra e promove a cultura moçambicana na Polónia através de eventos autênticos e envolventes!\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Criar eventos de música, dança, gastronomia e desporto\n" +
-          "• Garantir autenticidade cultural em todos os eventos\n" +
-          "• Colaborar com artistas moçambicanos na Polónia\n" +
-          "• Estabelecer parcerias com grupos culturais locais\n" +
-          "• Desenvolver iniciativas de literatura e artes\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Paixão pela cultura moçambicana\n" +
-          "• Criatividade e sensibilidade cultural\n" +
-          "• Capacidade de organização de eventos\n" +
-          "• Networking e estabelecimento de parcerias",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
-      },
-      {
-        title: "Responsável de Eventos e Logística",
-        description:
-          "Transforma ideias em realidade garantindo que todos os eventos decorram sem falhas!\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Gerir espaços, equipamentos e transporte\n" +
-          "• Criar checklists e garantir cumprimento de prazos\n" +
-          "• Coordenar voluntários durante eventos\n" +
-          "• Supervisionar operações no terreno\n" +
-          "• Resolver imprevistos com agilidade\n" +
-          "• Garantir qualidade na execução de eventos\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Orientação para detalhes e organização\n" +
-          "• Capacidade de gestão de equipas\n" +
-          "• Resolução de problemas sob pressão\n" +
-          "• Proatividade e profissionalismo",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
-      },
-    ],
+      "A Assembleia Geral é o órgão máximo de deliberação da Associação de Moçambicanos na Polónia (AMOP), sendo composta por todos os membros no pleno gozo dos seus direitos. " +
+      "Representa a expressão máxima da vontade coletiva da associação, assegurando a participação democrática, a transparência e a legitimidade das decisões tomadas.\n\n" +
+      "Enquanto órgão soberano, a Assembleia Geral define as orientações estratégicas da AMOP e exerce funções de supervisão sobre os restantes órgãos sociais, " +
+      "garantindo o alinhamento das suas atividades com os objetivos e valores da associação.\n\n" +
+      "📋 Principais funções:\n" +
+      "• Aprovar, rever e alterar os estatutos da associação;\n" +
+      "• Eleger, avaliar e destituir os membros da Direção e demais órgãos sociais;\n" +
+      "• Apreciar e aprovar os relatórios de atividades e contas apresentados pela Direção;\n" +
+      "• Deliberar sobre matérias estratégicas e decisões de grande relevância para a associação;\n" +
+      "• Aprovar planos de atividades, orçamentos e eventuais alterações estruturais;\n" +
+      "• Garantir a participação ativa e democrática dos membros nos processos de decisão;\n" +
+      "• Conduzir reuniões da Assembleia Geral de forma organizada e transparente;\n" +
+      "• Elaborar e validar as atas das reuniões, assegurando o registo fiel das deliberações;\n" +
+      "• Comunicar formalmente à Direção as decisões tomadas pela Assembleia Geral;\n" +
+      "• Pronunciar-se sobre quaisquer outras matérias que lhe sejam submetidas nos termos dos estatutos.\n\n" +
+      "✅ Critérios para candidatura:\n" +
+      "• Ser membro ativo da AMOP;\n" +
+      "• Demonstrar elevado sentido de responsabilidade, imparcialidade e compromisso institucional;\n" +
+      "• Capacidade de condução de reuniões de forma organizada, estruturada e eficiente (no caso do Presidente);\n" +
+      "• Boa capacidade de organização, redação e gestão documental (no caso do Secretário);\n" +
+      "• Boa comunicação institucional e atenção ao detalhe.\n\n" +
+      "Posições abertas:\n" +
+      "👤 Presidente\n" +
+      "👤 Secretário",
+    departmentApplyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+    positions: [],
   },
   {
-    department: " Departamento de Marketing",
+    department: "Departamento de Eventos & Comunidade",
     departmentDescription:
-      "O Departamento de Marketing tem como propósito principal garantir a comunicação estratégica e eficaz da Associação de Estudantes Moçambicanos na Polónia." +
-      " O seu papel é assegurar que todas as iniciativas, eventos, valores e projetos da associação sejam comunicados de forma clara, atrativa e consistente, promovendo a unidade, " +
-      "a representação e o fortalecimento da identidade coletiva dos estudantes moçambicanos no país.\n\nAs suas responsabilidades incluem:\n" +
-      " • Gerir a presença da associação nas redes sociais;\n• Criar e editar conteúdos visuais e escritos;\n• Manter a identidade visual da associação;\n" +
-      " • Promover eventos, iniciativas culturais e académicas;\n• Aumentar o alcance, envolvimento e participação dos estudantes;\n" +
-      "• Realizar análises de desempenho e sugerir melhorias contínuas.",
-    positions: [
-      {
-        title: "Director(a)",
-        description:
-          "Lidera a estratégia de comunicação da AEMOPOL e fortalece a identidade da associação!\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Definir estratégia de comunicação do departamento\n" +
-          "• Planear e coordenar conteúdos\n" +
-          "• Garantir coerência da identidade visual\n" +
-          "• Supervisionar todas as publicações\n" +
-          "• Fazer ligação com outros departamentos\n" +
-          "• Coordenar equipa de marketing\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Visão estratégica de comunicação\n" +
-          "• Liderança e gestão de equipas\n" +
-          "• Criatividade e pensamento analítico\n" +
-          "• Conhecimento de marketing digital",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
-      },
-      {
-        title: "Social Media Manager",
-        description:
-          "Gere a presença digital da AEMOPOL e conecta a comunidade estudantil através das redes sociais!\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Gestão diária das redes sociais\n" +
-          "• Criação e edição de conteúdos (fotos e vídeos)\n" +
-          "• Copywriting atrativo e envolvente\n" +
-          "• Monitorização de interações e comunidade\n" +
-          "• Análise de métricas de desempenho\n" +
-          "• Desenvolver estratégias de engagement\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Experiência com redes sociais\n" +
-          "• Criatividade e capacidade de escrita\n" +
-          "• Conhecimento de ferramentas de design\n" +
-          "• Análise de dados e métricas",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
-      },
-    ],
+      "O Departamento de Eventos & Comunidade é responsável pelo planeamento, organização e execução das atividades da Associação de Moçambicanos na Polónia (AMOP), " +
+      "promovendo o envolvimento ativo dos membros e o fortalecimento do espírito comunitário.\n\n" +
+      "Este departamento desempenha um papel central na dinamização da associação, contribuindo para a valorização da cultura moçambicana, " +
+      "a criação de laços entre os membros e o crescimento sustentável da AMOP.\n\n" +
+      "📋 Principais funções:\n" +
+      "• Planear, organizar e executar eventos e atividades da associação;\n" +
+      "• Gerir a logística e operação dos eventos (espaços, materiais, cronogramas, equipas);\n" +
+      "• Promover o envolvimento e participação ativa da comunidade nas iniciativas da AMOP;\n" +
+      "• Criar experiências que reforcem o sentido de pertença e união entre os membros;\n" +
+      "• Colaborar com outros departamentos na divulgação e implementação de atividades;\n" +
+      "• Avaliar o impacto dos eventos e propor melhorias contínuas;\n" +
+      "• Contribuir para a valorização e promoção da cultura moçambicana.\n\n" +
+      "✅ Critérios para candidatura:\n" +
+      "• Sentido de responsabilidade e boa capacidade de organização;\n" +
+      "• Cumprimento de prazos e capacidade de gestão de tarefas;\n" +
+      "• Proatividade e disponibilidade para participação ativa nas atividades;\n" +
+      "• Capacidade de trabalho em equipa e colaboração;\n" +
+      "• Compromisso com a missão e valores da AMOP;\n" +
+      "• Boa comunicação e espírito de iniciativa;\n" +
+      "• Disponibilidade mínima para participação em eventos da associação.\n\n" +
+      "⭐ Competências valorizadas (não obrigatórias):\n" +
+      "• Experiência na organização de eventos ou atividades comunitárias;\n" +
+      "• Participação prévia em voluntariado ou associações;\n" +
+      "• Criatividade na conceção de atividades e iniciativas;\n" +
+      "• Capacidade de propor ideias inovadoras e agir com autonomia.\n\n" +
+      "Posições abertas:\n" +
+      "👤 Chefe de Departamento\n" +
+      "👤 Membro\n" +
+      "👤 Membro\n" +
+      "👤 Membro\n" +
+      "👤 Membro",
+    departmentApplyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSc-URmuc9KNvl3z0IMBwfH31AJ0_FyCFmSEX5l9gC2xvK0fmw/viewform?usp=publish-editor",
+    positions: [],
   },
   {
-    department: "Departamento de Tecnologia e Informação",
+    department: "Departamento de Marketing & Comunicação",
     departmentDescription:
-      "O Departamento de Tecnologia e Informação é responsável por desenvolver e manter a infraestrutura digital da AEMOPOL, " +
-      "criando soluções tecnológicas que facilitam a comunicação, gestão e operação da associação. O departamento trabalha para garantir que a " +
-      "presença digital da associação seja moderna, eficiente e acessível a todos os estudantes.",
-    positions: [
-      {
-        title: "Director(a)",
-        description:
-          "Lidera o Departamento de Tecnologia e Informação e impulsiona a inovação digital na AEMOPOL!\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Definir estratégia tecnológica do departamento\n" +
-          "• Planear e coordenar projetos digitais\n" +
-          "• Garantir segurança e eficiência dos sistemas\n" +
-          "• Supervisionar manutenção de plataformas\n" +
-          "• Fazer ligação com outros departamentos\n" +
-          "• Coordenar equipa de TI\n\n" +
-          "💻 Requisitos Técnicos:\n" +
-          "• Estudante de IT, Eng. Informática, Ciências da Computação ou áreas relacionadas\n" +
-          "• Conhecimento sólido de desenvolvimento web (frontend e/ou backend)\n" +
-          "• Experiência com gestão de projetos tecnológicos\n" +
-          "• Familiaridade com sistemas de controlo de versão (Git)\n" +
-          "• Compreensão de infraestrutura digital e segurança\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Visão estratégica de tecnologia\n" +
-          "• Liderança e gestão de equipas técnicas\n" +
-          "• Capacidade de tomada de decisões técnicas\n" +
-          "• Excelente comunicação técnica e não-técnica\n" +
-          "• Paixão por inovação digital",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
-      },
-      {
-        title: "Frontend Developer",
-        description:
-          "Cria interfaces intuitivas e experiências digitais envolventes para a comunidade AEMOPOL!\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Desenvolver e manter website e aplicações\n" +
-          "• Transformar designs em código funcional e responsivo\n" +
-          "• Criar interfaces acessíveis e performantes\n" +
-          "• Trabalhar com tecnologias modernas\n" +
-          "• Colaborar com designers e backend\n\n" +
-          "💻 Requisitos Técnicos:\n" +
-          "• Estudante de IT, Eng. Informática ou áreas relacionadas\n" +
-          "• Conhecimentos em HTML, CSS e JavaScript\n" +
-          "• Familiaridade com frameworks (React, Vue, etc.)\n" +
-          "• Experiência com design responsivo\n" +
-          "• Vontade de aprender e evoluir\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Paixão por criar experiências digitais\n" +
-          "• Atenção aos detalhes visuais\n" +
-          "• Capacidade de trabalho em equipa\n" +
-          "• Proatividade e resolução de problemas",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
-      },
-      {
-        title: "Backend Developer",
-        description:
-          "Constrói sistemas robustos que sustentam as operações digitais da AEMOPOL!\n\n" +
-          "📋 Principais Responsabilidades:\n" +
-          "• Desenvolver e manter APIs e serviços\n" +
-          "• Gerir bases de dados e integridade dos dados\n" +
-          "• Implementar lógica de negócio e autenticação\n" +
-          "• Integrar sistemas externos (pagamentos, emails)\n" +
-          "• Otimizar performance e segurança\n" +
-          "• Criar documentação técnica\n\n" +
-          "💻 Requisitos Técnicos:\n" +
-          "• Estudante de IT, Eng. Informática ou áreas relacionadas\n" +
-          "• Conhecimento em linguagem backend (Node.js, Python, Java)\n" +
-          "• Compreensão de bases de dados (SQL e/ou NoSQL)\n" +
-          "• Familiaridade com APIs RESTful ou GraphQL\n" +
-          "• Conhecimento de autenticação (JWT, OAuth)\n\n" +
-          "✨ Perfil Ideal:\n" +
-          "• Resolução de problemas complexos\n" +
-          "• Pensamento arquitetural\n" +
-          "• Atenção à segurança e performance\n" +
-          "• Capacidade de documentação técnica",
-        applyLink:
-          "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
-      },
-    ],
+      "O Departamento de Marketing e Comunicação é responsável pela gestão da comunicação institucional da Associação de Moçambicanos na Polónia (AMOP), " +
+      "assegurando a divulgação eficaz das suas atividades, a promoção da sua imagem pública e o fortalecimento do seu posicionamento junto da comunidade.\n\n" +
+      "Este departamento desempenha um papel estratégico na ligação entre a associação e os seus membros, parceiros e o público em geral, " +
+      "garantindo uma comunicação clara, consistente e alinhada com os valores da AMOP.\n\n" +
+      "📋 Principais funções:\n" +
+      "• Desenvolver e implementar estratégias de comunicação e marketing da associação;\n" +
+      "• Criar conteúdos para redes sociais e outros canais de comunicação;\n" +
+      "• Divulgar eventos, iniciativas e atividades promovidas pela AMOP;\n" +
+      "• Planear e executar campanhas de comunicação e engajamento;\n" +
+      "• Garantir a consistência da identidade visual e institucional da associação;\n" +
+      "• Gerir as redes sociais oficiais (ex.: Instagram, TikTok, entre outras);\n" +
+      "• Produzir materiais promocionais (design gráfico, vídeos, textos institucionais);\n" +
+      "• Apoiar outros departamentos na promoção das suas atividades e iniciativas;\n" +
+      "• Monitorizar o alcance e impacto das ações de comunicação, propondo melhorias contínuas.\n\n" +
+      "✅ Critérios para candidatura:\n" +
+      "• Interesse por marketing, comunicação ou gestão de redes sociais;\n" +
+      "• Pensamento criativo aliado a capacidade de planeamento estratégico;\n" +
+      "• Boa capacidade de organização e cumprimento de prazos (deadlines);\n" +
+      "• Capacidade de trabalho em equipa e colaboração interdepartamental;\n" +
+      "• Sentido de responsabilidade, proatividade e compromisso institucional;\n" +
+      "• Boa comunicação oral e escrita;\n" +
+      "• Disponibilidade para participação ativa nas atividades da associação.\n\n" +
+      "⭐ Competências valorizadas (não obrigatórias):\n" +
+      "• Experiência na gestão de redes sociais (Instagram, TikTok, etc.);\n" +
+      "• Conhecimentos de design gráfico (ex.: Canva, Adobe Photoshop);\n" +
+      "• Experiência em edição de vídeo (ex.: CapCut ou similares);\n" +
+      "• Capacidade de criação de conteúdos criativos e adaptados ao público-alvo.\n\n" +
+      "Posições abertas:\n" +
+      "👤 Chefe de Departamento\n" +
+      "👤 Membro\n" +
+      "👤 Membro\n" +
+      "👤 Membro\n" +
+      "👤 Membro",
+    departmentApplyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSenj2rppVu9nNBOPcfr6fZHmwi14hS0Kv0yzKmin86nA9c9SQ/viewform?usp=publish-editor",
+    positions: [],
+  },
+  {
+    department: "Departamento de Parcerias & Relações Institucionais",
+    departmentDescription:
+      "O Departamento de Parcerias e Relações Institucionais desempenha um papel estratégico na Associação de Moçambicanos na Polónia (AMOP), " +
+      "funcionando como a principal ponte entre a associação e entidades externas, incluindo instituições públicas, empresas, universidades, " +
+      "organizações não-governamentais e outros parceiros relevantes.\n\n" +
+      "Este departamento é responsável por fortalecer a presença institucional da AMOP, promover colaborações sustentáveis e criar oportunidades " +
+      "que contribuam para o crescimento e impacto da associação.\n\n" +
+      "📋 Principais funções:\n" +
+      "• Identificar, desenvolver e estabelecer parcerias estratégicas com entidades externas;\n" +
+      "• Gerir e manter relações institucionais com parceiros, assegurando comunicação contínua e profissional;\n" +
+      "• Angariar apoios, patrocínios e colaborações para iniciativas da associação;\n" +
+      "• Mapear oportunidades externas relevantes (eventos, financiamentos, colaborações, programas institucionais);\n" +
+      "• Elaborar propostas institucionais, cartas de apresentação e documentos de parceria;\n" +
+      "• Representar a associação em contextos institucionais, quando necessário;\n" +
+      "• Colaborar com outros departamentos para alinhar parcerias com as atividades e objetivos da AMOP.\n\n" +
+      "✅ Critérios para candidatura:\n" +
+      "• Interesse na área de parcerias, relações institucionais ou desenvolvimento organizacional;\n" +
+      "• Boa capacidade de comunicação oral e escrita;\n" +
+      "• Pensamento estratégico e capacidade de identificação de oportunidades;\n" +
+      "• Capacidade de trabalho em equipa e colaboração interdepartamental;\n" +
+      "• Sentido de responsabilidade, proatividade e compromisso institucional.\n\n" +
+      "⭐ Competências valorizadas (não obrigatórias):\n" +
+      "• Experiência em organização de eventos;\n" +
+      "• Participação prévia em associações, ONGs ou atividades comunitárias;\n" +
+      "• Experiência em voluntariado ou contextos institucionais;\n" +
+      "• Capacidade de negociação e relacionamento interpessoal.\n\n" +
+      "Posições abertas:\n" +
+      "👤 Chefe de Departamento\n" +
+      "👤 Membro\n" +
+      "👤 Membro\n" +
+      "👤 Membro",
+    departmentApplyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+    positions: [],
+  },
+  {
+    department: "Departamento de Tecnologia",
+    departmentDescription:
+      "O Departamento de Tecnologia é responsável pelo suporte tecnológico e pela promoção da inovação na Associação de Moçambicanos na Polónia (AMOP), " +
+      "assegurando o bom funcionamento das plataformas digitais e o desenvolvimento de soluções que apoiem as atividades da associação.\n\n" +
+      "Este departamento desempenha um papel essencial na modernização dos processos internos, na melhoria da eficiência operacional e no suporte técnico às iniciativas da AMOP, " +
+      "contribuindo para uma organização mais ágil, estruturada e orientada para o futuro.\n\n" +
+      "📋 Principais funções:\n" +
+      "• Gerir e manter as plataformas digitais da associação (website, formulários, ferramentas internas, etc.);\n" +
+      "• Prestar suporte técnico durante eventos e atividades (equipamentos, apresentações, sistemas digitais);\n" +
+      "• Desenvolver e implementar ferramentas internas que facilitem a gestão e organização da associação;\n" +
+      "• Gerir, organizar e estruturar dados relevantes da AMOP de forma segura e eficiente;\n" +
+      "• Identificar e implementar soluções tecnológicas que melhorem processos existentes;\n" +
+      "• Apoiar outros departamentos na utilização de ferramentas digitais;\n" +
+      "• Garantir boas práticas de organização, segurança e utilização de dados.\n\n" +
+      "✅ Critérios para candidatura:\n" +
+      "• Conhecimentos básicos a intermédios em desenvolvimento web (front-end e back-end);\n" +
+      "• Capacidade de trabalhar com tecnologias como HTML, CSS, JavaScript e pelo menos uma linguagem back-end (ex.: Python, Node.js);\n" +
+      "• Noções de bases de dados (ex.: SQL ou NoSQL) e organização de dados;\n" +
+      "• Familiaridade com ferramentas digitais e plataformas online;\n" +
+      "• Capacidade de resolução de problemas técnicos de forma autónoma;\n" +
+      "• Interesse por tecnologia, inovação e melhoria contínua;\n" +
+      "• Boa capacidade de organização e documentação de soluções;\n" +
+      "• Capacidade de trabalho em equipa e comunicação com membros não técnicos.\n\n" +
+      "⭐ Competências valorizadas (não obrigatórias):\n" +
+      "• Experiência com frameworks (ex.: React, Django, Express ou similares);\n" +
+      "• Conhecimentos básicos de Git e controlo de versões;\n" +
+      "• Experiência com automação de tarefas e integrações (APIs);\n" +
+      "• Familiaridade com ferramentas no-code/low-code (ex.: Airtable, Zapier, etc.);\n" +
+      "• Experiência em projetos pessoais, académicos ou associativos na área tecnológica.\n\n" +
+      "Posições abertas:\n" +
+      "👤 Chefe de Departamento\n" +
+      "👤 Membro",
+    departmentApplyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfmIl9Ag0-fqoxkg-xRymHyStAms5J9epN4n7Kf_dbnjpTZrg/viewform?usp=publish-editor",
+    positions: [],
+  },
+  {
+    department: "Departamento Acadêmico",
+    departmentDescription:
+      "O Departamento Acadêmico é responsável pela representação, integração e apoio aos estudantes moçambicanos na Polónia, " +
+      "assegurando que as suas necessidades, interesses e desafios são devidamente considerados no âmbito das atividades da Associação de Moçambicanos na Polónia (AMOP).\n\n" +
+      "Este departamento atua como um elo de ligação entre os estudantes e a Direção da AMOP, promovendo a inclusão, o apoio mútuo e o desenvolvimento académico da comunidade estudantil.\n\n" +
+      "📋 Principais funções:\n" +
+      "• Representar os interesses dos estudantes junto da Direção da AMOP;\n" +
+      "• Apoiar a integração de novos estudantes moçambicanos (acolhimento, orientação e acompanhamento inicial);\n" +
+      "• Identificar necessidades, desafios e oportunidades no seio da comunidade estudantil;\n" +
+      "• Promover iniciativas académicas (workshops, sessões informativas, partilha de experiências, etc.);\n" +
+      "• Facilitar a comunicação entre os estudantes e os órgãos da associação;\n" +
+      "• Colaborar com outros departamentos na organização de atividades relevantes para estudantes;\n" +
+      "• Contribuir para o fortalecimento da rede de estudantes moçambicanos na Polónia.\n\n" +
+      "✅ Critérios para candidatura:\n" +
+      "• Ser estudante moçambicano residente na Polónia;\n" +
+      "• Interesse em representação estudantil e envolvimento comunitário;\n" +
+      "• Boa capacidade de comunicação e relacionamento interpessoal;\n" +
+      "• Sentido de responsabilidade, proatividade e compromisso;\n" +
+      "• Capacidade de trabalho em equipa;\n" +
+      "• Disponibilidade para participação ativa nas atividades da associação.\n\n" +
+      "⭐ Competências valorizadas (não obrigatórias):\n" +
+      "• Experiência prévia em representação estudantil ou associações;\n" +
+      "• Participação em atividades académicas, voluntariado ou iniciativas comunitárias;\n" +
+      "• Capacidade de organização de eventos e iniciativas académicas;\n" +
+      "• Espírito de liderança e iniciativa.\n\n" +
+      "Posições abertas:\n" +
+      "👤 Coordenador Acadêmico (Representante dos Estudantes) — membro eleito pelos estudantes através de processo eleitoral próprio\n" +
+      "👤 Vice-Coordenador\n" +
+      "👤 Membro\n" +
+      "👤 Membro\n" +
+      "👤 Membro",
+    departmentApplyLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScu4Vka2K8IKnK9pFolPpCZlOKBLRqWghPA0BG1wGqyUwdQyw/viewform?usp=publish-editor",
+    positions: [],
   },
 ];
 
@@ -382,7 +368,7 @@ const HomePage = ({ onViewJobs }: { onViewJobs: () => void }) => (
     <CardFooter className="flex justify-center px-4 sm:px-6 pb-8 pt-4 bg-gradient-to-b from-white via-muted/5 to-muted/10">
       <Button
         onClick={onViewJobs}
-        className="w-full sm:w-auto bg-gradient-to-r from-secondary via-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+        className="w-full sm:w-auto bg-gradient-to-r from-secondary via-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 whitespace-nowrap"
       >
         Ver vagas disponíveis
       </Button>
@@ -436,24 +422,36 @@ const JobsPage = ({ onBack }: { onBack: () => void }) => (
                       <h3 className="font-semibold text-base sm:text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                         {pos.title}
                       </h3>
-                      <p className="mt-2 text-xs sm:text-sm leading-relaxed whitespace-pre-line text-foreground/80">
-                        {pos.description}
-                      </p>
-                      <Button
-                        asChild
-                        className="mt-3 sm:mt-4 w-full sm:w-auto bg-gradient-to-r from-secondary via-secondary/90 to-secondary/80 hover:from-secondary/90 hover:to-secondary text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-                      >
-                        <a
-                          href={pos.applyLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                      {"description" in pos && pos.description && (
+                        <p className="mt-2 text-xs sm:text-sm leading-relaxed whitespace-pre-line text-foreground/80">
+                          {pos.description}
+                        </p>
+                      )}
+                      {"applyLink" in pos && pos.applyLink && (
+                        <Button
+                          asChild
+                          className="mt-3 sm:mt-4 w-full sm:w-auto bg-gradient-to-r from-secondary via-secondary/90 to-secondary/80 hover:from-secondary/90 hover:to-secondary text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap"
                         >
-                          Submeta a sua candidatura
-                        </a>
-                      </Button>
+                          <a href={pos.applyLink} target="_blank" rel="noopener noreferrer">
+                            Submeta a sua candidatura
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   ))}
                 </div>
+                {"departmentApplyLink" in dept && dept.departmentApplyLink && (
+                  <div className="mt-4 sm:mt-6 flex justify-center">
+                    <Button
+                      asChild
+                      className="w-full sm:w-auto bg-gradient-to-r from-secondary via-secondary/90 to-secondary/80 hover:from-secondary/90 hover:to-secondary text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap"
+                    >
+                      <a href={dept.departmentApplyLink} target="_blank" rel="noopener noreferrer">
+                        Submeta a sua candidatura
+                      </a>
+                    </Button>
+                  </div>
+                )}
               </AccordionContent>
             </AccordionItem>
           ))}
