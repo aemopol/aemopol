@@ -34,7 +34,7 @@ type Department = {
 const associationData = {
   name: "Portal de Candidaturas da AMOP",
   subtitle:
-    "Candidata-te e faz parte da equipa que constrói a Associação de Residentes Moçambicanos na Polónia.",
+    "Candidata-te e faz parte da equipa que constrói a Associação de Moçambicanos na Polónia.",
   about:
     "Este é o espaço oficial de candidaturas da AMOP para os seus diferentes departamentos e posições.\n\n" +
     "Aqui podes explorar as vagas disponíveis e submeter a tua candidatura para fazer parte da equipa que organiza, " +
